@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+    
+    <div class="badibody">
+    <p class="title">Choose between Rock , Paper , Scissor</p>
+    
+
+    <button onclick="  playermove='Rock' 
+    let computerchoice=forcomputerchoice();  //even tho computerchoice is defined in a button it is still acting like a global one.
+    gamedecision(playermove,computerchoice); "
+     class="bbutton"><img src="for images/Rock-emoji.png" class="image"></button>
+
+
+    <button onclick="  playermove='Paper' 
+    computerchoice=forcomputerchoice();
+    gamedecision(playermove,computerchoice); " class="bbutton"><img src="for images/Paper-emoji.png" class="image"></button>
+
+
+
+    <button onclick="  playermove='Scissors' 
+     computerchoice=forcomputerchoice();
+    gamedecision(playermove,computerchoice); " class="bbutton"><img src="for images/Scissors-emoji.png" class="image"></button>
+
+    <p class="Resultt"></p>
+    <p class="myhand"></p>
+    
+    <div class="Winlosetie"></div>
+
+    <button onclick=" 
+    obj.win=0;
+    obj.tie=0;
+    obj.lose=0;
+    localStorage.removeItem('count');
+    updatewinlosetie();
+    resetResultt();
+    resetmyhand();
+    resetlink();
+    " class="resetbutton"> Reset the Count</button>
+    <p>Play Ten Times to unlock something !!</p>
+    <p class="link"></p>
+    </div>
+
+    <script src="javascript.js"></script>
+    
+</body>
+
+
+
+</html>
